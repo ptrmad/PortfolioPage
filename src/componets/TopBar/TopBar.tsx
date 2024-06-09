@@ -1,0 +1,28 @@
+import { Link, NavLink } from "react-router-dom";
+import { MyName } from "../MyName/MyName";
+import styles from "./TopBar.module.css";
+
+export function TopBar() {
+  return (
+    <div className={styles.topBar}>
+      <MyName />
+      <div className={styles.navSection}>
+        <NavLink className={styles.navItem} to="home">
+          Home
+        </NavLink>
+        <NavLink className={styles.navItem} to="portfolio">
+          Portfolio
+        </NavLink>
+        <Link className={styles.navItem} to="portfolio">
+          GitHub
+        </Link>
+        <NavLink className={styles.navItem} to="cv">
+          CV
+        </NavLink>
+        <NavLink className={styles.navItem} to="contact">
+          Contact
+        </NavLink>
+      </div>
+    </div>
+  );
+}

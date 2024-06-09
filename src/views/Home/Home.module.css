@@ -1,0 +1,15 @@
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+  margin-bottom: 5vh;
+}
+
+.myPhoto {
+  border-radius: 50%;
+  max-width: 75vw;
+  width: 35rem;
+  margin-top: 5vh;
+}
