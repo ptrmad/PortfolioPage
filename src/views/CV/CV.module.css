@@ -1,0 +1,15 @@
+.cv {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vh 0;
+  gap: 5vh;
+}
+
+.cv iframe {
+  max-width: 95vw;
+  width: 35rem;
+  height: 85vh;
+}

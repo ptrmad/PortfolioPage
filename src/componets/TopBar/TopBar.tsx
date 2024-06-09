@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { MyName } from "../MyName/MyName";
 import styles from "./TopBar.module.css";
 
@@ -13,9 +13,6 @@ export function TopBar() {
         <NavLink className={styles.navItem} to="portfolio">
           Portfolio
         </NavLink>
-        <Link className={styles.navItem} to="portfolio">
-          GitHub
-        </Link>
         <NavLink className={styles.navItem} to="cv">
           CV
         </NavLink>

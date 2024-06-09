@@ -9,8 +9,13 @@ export function Footer() {
         <MyName />
         <p>Front-End Developer</p>
       </div>
-      <div>
-        <ul>piotr.m.drozdz</ul>
+      <div className={styles.footerSection}>
+        <ul>email</ul>
+        <ul>
+          <Link className={styles.footerItem} to="portfolio">
+            GitHub
+          </Link>
+        </ul>
       </div>
       <div className={styles.footerSection}>
         <NavLink className={styles.footerItem} to="home">
@@ -19,9 +24,6 @@ export function Footer() {
         <NavLink className={styles.footerItem} to="portfolio">
           Portfolio
         </NavLink>
-        <Link className={styles.footerItem} to="portfolio">
-          GitHub
-        </Link>
         <NavLink className={styles.footerItem} to="cv">
           CV
         </NavLink>
