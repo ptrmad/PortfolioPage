@@ -10,7 +10,7 @@ export function Footer() {
         <p>Front-End Developer</p>
       </div>
       <div>
-        <ul>piotr.m.drozdzal@gmail.com</ul>
+        <ul>piotr.m.drozdz</ul>
       </div>
       <div className={styles.footerSection}>
         <NavLink className={styles.footerItem} to="home">

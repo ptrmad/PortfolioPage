@@ -12,26 +12,28 @@ export function Home() {
           alt="my photo"
         />
       </div>
-      <div>
-        <MyName />
+      <div className={styles.heading}>
+        <h1>
+          <MyName />
+          Portfolio
+        </h1>
       </div>
-      <div>
+      <div className={styles.text}>
         <p>
           I'm a curious front-end developer looking for the new challenges and
           opportunities to grow. Let's work together!
         </p>
       </div>
       <TechStack />
-      <div>Page description</div>
-      <div>
+      <div className={styles.text}>
         <p>
-          This page is about me and I am the most fantastic. My Journey in
-          coding started in 2022, when I took my first course on responsive web
-          design from FreeCodeCamp. After finishing I jumped right into learning
-          javascript and continued this journey with learning React. My aim is
-          to make eye-catching, immersive websites and webapps, that will give
-          the users outstanding experiences. I use HTML/CSS, javaScript and
-          React. Below you will find my
+          My Journey in coding started in 2022, when I took my first course on
+          responsive web design from FreeCodeCamp. After finishing I jumped
+          right into learning javascript and continued this journey with
+          learning React. My aim is to make eye-catching, immersive websites and
+          webapps, that will give the users outstanding experiences. I use
+          HTML/CSS, javaScript and React. On this page you'll find all the
+          information you need to start collaboration with me!
         </p>
       </div>
     </div>

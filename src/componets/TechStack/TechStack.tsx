@@ -4,28 +4,22 @@ export function TechStack() {
   return (
     <div className={styles.techStack}>
       <h2>My Tech Stack</h2>
-      <ul>HTML</ul>
-      <div className={styles.horizontal}>
+      <div>
+        <ul>HTML</ul>
         <ul>CSS</ul>
-        <div>
-          <li>CSS modules</li>
-          <li>Bootstrap</li>
-        </div>
-      </div>
-      <ul>Typescript</ul>
-      <div className={styles.horizontal}>
+        <ul>CSS modules</ul>
+        <ul>Bootstrap</ul>
+        <ul>Typescript</ul>
         <ul>React</ul>
-        <div>
-          <li>react hooks</li>
-          <li>react hook form</li>
-          <li>tanstack query</li>
-          <li>react-router-dom</li>
-          <li>react-intersection-observer</li>
-        </div>
+        <ul>react hooks</ul>
+        <ul>react hook form</ul>
+        <ul>tanstack query</ul>
+        <ul>react-router-dom</ul>
+        <ul>react-intersection-observer</ul>
+        <ul>Vite</ul>
+        <ul>Git</ul>
+        <ul>VSCode</ul>
       </div>
-      <ul>Vite</ul>
-      <ul>Git</ul>
-      <ul>VSCode</ul>
     </div>
   );
 }
