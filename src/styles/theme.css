@@ -2,10 +2,13 @@ body {
   --font-size-default: 16px;
   --font-family-default: Helvetica, Arial, sans-serif;
 
-  --color-olive: #98ce00;
-  --color-gray: #757780;
-  --color-blue: #6ccff6;
-  --color-white: #fffffc;
-  --color-black: #001011;
+  width: 100%;
+
+  --color-black: #1e1e24;
+  --color-red: #92140c;
+  --color-white: #fff8f0;
+  --color-beige: #ffcf99;
+  --color-blue: #111d4a;
   background-color: var(--color-black);
+  color: var(--color-white);
 }

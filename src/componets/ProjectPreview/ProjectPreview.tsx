@@ -1,13 +1,20 @@
 import styles from "./ProjectPreview.module.css";
 
-export function ProjectPreview() {
+interface Project {
+  name: string;
+  image: string;
+  description: string;
+}
+
+interface ProjectPreviewProps {
+  data: Project;
+}
+
+export function ProjectPreview({ data }: ProjectPreviewProps) {
   return (
     <div className={styles.projectPreview}>
-      <h3>Project name</h3>
-      <div>Project Image</div>
-      <p>Project description</p>
-      <p>Technologies used</p>
-      <p>Link to GitHub</p>
+      <img src={data.image} alt={data.name} className={styles.projectImage} />
+      <p className={styles.projectDescription}>{data.description}</p>
     </div>
   );
 }

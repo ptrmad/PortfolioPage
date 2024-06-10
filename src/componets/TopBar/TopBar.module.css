@@ -3,8 +3,8 @@
   height: 4rem;
   padding: 1rem 2rem;
 
-  background-color: green;
-  color: black;
+  background-color: var(--color-blue);
+  color: var(--color-beige);
 
   display: flex;
   flex-direction: row;
@@ -27,7 +27,7 @@
 }
 
 .navItem {
-  transition: ease;
+  transition: ease 0.5s;
 }
 
 .navItem:hover {

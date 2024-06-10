@@ -20,20 +20,21 @@ export function Home() {
       </div>
       <div className={styles.text}>
         <p>
-          I'm a curious front-end developer looking for the new challenges and
+          I'm a curious front-end developer eager for new challenges and
           opportunities to grow. Let's work together!
         </p>
       </div>
       <TechStack />
       <div className={styles.text}>
+        <h2>About Me</h2>
         <p>
-          My Journey in coding started in 2022, when I took my first course on
-          responsive web design from FreeCodeCamp. After finishing I jumped
-          right into learning javascript and continued this journey with
-          learning React. My aim is to make eye-catching, immersive websites and
-          webapps, that will give the users outstanding experiences. I use
-          HTML/CSS, javaScript and React. On this page you'll find all the
-          information you need to start collaboration with me!
+          My coding journey began in 2022 when I completed my first course on
+          responsive web design from FreeCodeCamp. After that, I dove straight
+          into learning JavaScript and continued with React. My goal is to
+          create eye-catching, immersive websites and web apps that provide
+          outstanding user experiences. I work with HTML, CSS, JavaScript, and
+          React. On this page, you'll find all the information you need to start
+          collaborating with me!
         </p>
       </div>
     </div>

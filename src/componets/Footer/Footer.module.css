@@ -11,8 +11,8 @@
 
   font-family: "Courier New", Courier, monospace;
 
-  background-color: black;
-  color: white;
+  background-color: var(--color-blue);
+  color: var(--color-beige);
 
   font-size: 0.75rem;
   padding: 0 5vw;

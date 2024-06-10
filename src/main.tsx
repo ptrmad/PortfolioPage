@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import App from "./App.tsx";
 import "./styles/globals.css";
+import "./styles/theme.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Layout } from "./componets/Layout/Layout.tsx";
 import { Home } from "./views/Home/Home.tsx";
