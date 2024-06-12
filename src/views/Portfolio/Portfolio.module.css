@@ -12,7 +12,7 @@
   gap: 6vw;
   list-style: none;
   width: 95vw;
-  background-color: var(--color-red);
+  background-color: var(--color-beige);
   border-radius: 8px;
   margin: 0 auto;
   padding: 5vh 0;
@@ -26,18 +26,4 @@
   text-justify: distribute;
   align-self: flex-start;
   justify-self: center;
-
-  background: var(--color-blue);
-  width: 30rem;
-  max-width: 90vw;
-  height: 50rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 4px var(--color-black);
-
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.projectItem:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 8px var(--color-black);
 }

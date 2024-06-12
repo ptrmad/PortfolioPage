@@ -1,3 +1,4 @@
+import { H2 } from "../H2/H2";
 import styles from "./ProjectPreview.module.css";
 
 interface Project {
@@ -13,7 +14,7 @@ interface ProjectPreviewProps {
 export function ProjectPreview({ data }: ProjectPreviewProps) {
   return (
     <div className={styles.projectPreview}>
-      <h3>{data.name}</h3>
+      <H2>{data.name}</H2>
       <div className={styles.projectImage}>
         <img src={data.image} alt={data.name} />
       </div>

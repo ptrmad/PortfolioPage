@@ -3,11 +3,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  background: var(--color-blue);
+  width: 30rem;
+  max-width: 90vw;
+  height: 50rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--color-black);
+
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.projectPreview h3 {
+.projectPreview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px var(--color-black);
+}
+
+.projectPreview h2 {
   text-align: center;
-  font-size: 2rem;
   padding: 2.5vh 0;
 }
 
@@ -16,8 +29,9 @@
   line-height: 1.5;
   text-justify: distribute-all-lines;
   text-align: left;
-  padding: 5vh 5vh 0 5vh;
+  padding: 5vh;
 }
+
 .projectImage {
   display: flex;
   justify-content: center;
@@ -29,5 +43,5 @@
   max-width: 85%;
   height: auto;
   border-radius: 8px;
-  border: 1px solid red;
+  box-shadow: 0 6px 8px var(--color-black);
 }

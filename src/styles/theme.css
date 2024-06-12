@@ -2,6 +2,7 @@ body {
   --font-size-default: 16px;
   --font-family-default: Helvetica, Arial, sans-serif;
 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
 
   --color-black: #1e1e24;
