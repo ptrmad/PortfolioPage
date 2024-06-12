@@ -6,8 +6,34 @@
   align-items: center;
 }
 
-.form {
+.contact h2 {
   display: flex;
   flex-direction: column;
   gap: 5vh;
+  margin: 5vh 2.5vh;
+  align-items: center;
+}
+
+.contactList {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-beige);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.contactItem:hover {
+  color: #0073b1;
+}
+
+.contactItem svg {
+  width: 2rem;
+  height: 2rem;
 }

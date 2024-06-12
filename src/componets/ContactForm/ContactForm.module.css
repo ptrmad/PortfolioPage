@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.formInput {
+  height: 5vh;
+  width: 30rem;
+  max-width: 95vw;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.inputMessage {
+  height: 30vh;
+  width: 30rem;
+  max-width: 95vw;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.button {
+  width: 6rem;
+  align-self: right;
+}

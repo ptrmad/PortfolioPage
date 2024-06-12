@@ -1,3 +1,4 @@
+import { H2 } from "../../componets/H2/H2";
 import { MyName } from "../../componets/MyName/MyName";
 import { TechStack } from "../../componets/TechStack/TechStack";
 import styles from "./Home.module.css";
@@ -15,7 +16,6 @@ export function Home() {
       <div className={styles.heading}>
         <h1>
           <MyName />
-          Portfolio
         </h1>
       </div>
       <div className={styles.text}>
@@ -26,7 +26,7 @@ export function Home() {
       </div>
       <TechStack />
       <div className={styles.text}>
-        <h2>About Me</h2>
+        <H2>About Me</H2>
         <p>
           My coding journey began in 2022 when I completed my first course on
           responsive web design from FreeCodeCamp. After that, I dove straight

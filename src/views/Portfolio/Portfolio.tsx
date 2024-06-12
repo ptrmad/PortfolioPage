@@ -1,3 +1,4 @@
+import { H2 } from "../../componets/H2/H2";
 import { ProjectPreview } from "../../componets/ProjectPreview/ProjectPreview";
 import styles from "./Portfolio.module.css";
 
@@ -34,13 +35,12 @@ export function Portfolio() {
   ];
 
   return (
-    <div>
-      <h2>My Projects</h2>
+    <div className={styles.portfolio}>
+      <H2>Projects</H2>
       <ul className={styles.projectList}>
         {projects.map((project) => (
           <li key={project.name} className={styles.projectItem}>
             <ProjectPreview data={project} />
-            <span>{project.name}</span>
           </li>
         ))}
       </ul>
