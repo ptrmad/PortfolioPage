@@ -23,10 +23,10 @@
 .contactItem {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
   color: var(--color-beige);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .contactItem:hover {
@@ -34,6 +34,6 @@
 }
 
 .contactItem svg {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
