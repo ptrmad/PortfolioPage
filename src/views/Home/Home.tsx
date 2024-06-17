@@ -2,16 +2,15 @@ import { H2 } from "../../componets/H2/H2";
 import { MyName } from "../../componets/MyName/MyName";
 import { TechStack } from "../../componets/TechStack/TechStack";
 import styles from "./Home.module.css";
+import ME from "../../assets/profilePic.jpeg";
 
 export function Home() {
   return (
     <div className={styles.home}>
-      <div>
-        <img
-          className={styles.myPhoto}
-          src="https://i.pinimg.com/originals/f4/cc/df/f4ccdf7a94e65ddf11f1cdfe7589dc5e.png"
-          alt="my photo"
-        />
+      <div className={styles.myPhotoContainer}>
+        <div className={styles.inner}>
+          <img className={styles.myPhoto} src={ME} alt="my photo" />
+        </div>
       </div>
       <div className={styles.heading}>
         <h1>

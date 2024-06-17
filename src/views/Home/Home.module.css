@@ -14,19 +14,85 @@
 
 .heading {
   text-align: center;
-  text-justify: center;
 }
 
 .text {
   font-size: 1.5rem;
   padding: 0 5vw;
   line-height: 1.5;
-  text-justify: distribute-all-lines;
   text-align: left;
 }
 
 .myPhoto {
   border-radius: 50%;
-  max-width: 75vw;
-  width: 35rem;
+  max-width: 66vw;
+  width: 25rem;
+  z-index: 1;
+}
+
+.myPhotoContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myPhotoContainer .inner {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 25rem;
+  max-width: 66vw;
+  max-height: 66vw;
+}
+
+.myPhotoContainer::before,
+.myPhotoContainer::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    45deg,
+    var(--color-black),
+    var(--color-blue),
+    var(--color-white),
+    var(--color-black),
+    var(--color-red),
+    var(--color-beige),
+    var(--color-black),
+    var(--color-blue),
+    var(--color-white),
+    var(--color-black),
+    var(--color-red),
+    var(--color-beige)
+  );
+  background-size: 400%;
+  z-index: -1;
+  animation: glow 20s linear infinite;
+  width: 25rem;
+  height: 25rem;
+  max-width: 66vw;
+  max-height: 66vw;
+  border-radius: 50%;
+}
+
+.myPhotoContainer::after {
+  filter: blur(25px);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
