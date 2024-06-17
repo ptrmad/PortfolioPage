@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import styles from "./SladeInWrapper.module.css";
+import styles from "./SlideInWrapper.module.css";
 import { ReactNode } from "react";
 
 interface SlideInWrapperProps {

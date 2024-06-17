@@ -1,5 +1,6 @@
 import { H2 } from "../../components/H2/H2";
 import { ProjectPreview } from "../../components/ProjectPreview/ProjectPreview";
+import { SlideInWrapper } from "../../components/SlideInWrapper/SlideInWrapper";
 import styles from "./Portfolio.module.css";
 
 interface Project {
@@ -23,7 +24,8 @@ export function Portfolio() {
     },
     {
       name: "E-commerce platform",
-      image: `https://raw.githubusercontent.com/ptrmad/Ecommerce-shop/main/images/screenshot.png`,
+      image:
+        "https://raw.githubusercontent.com/ptrmad/Ecommerce-shop/main/images/screenshot.png",
       description: `A fully functional e-commerce application built with
                 React, using hooks and react-router-dom for state
                 management and navigation. Key features include
@@ -39,8 +41,10 @@ export function Portfolio() {
       <H2>Projects</H2>
       <ul className={styles.projectList}>
         {projects.map((project) => (
-          <li className={styles.projectItem}>
-            <ProjectPreview data={project} />
+          <li key={project.name} className={styles.projectItem}>
+            <SlideInWrapper>
+              <ProjectPreview data={project} />
+            </SlideInWrapper>
           </li>
         ))}
       </ul>
