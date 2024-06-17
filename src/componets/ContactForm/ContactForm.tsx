@@ -1,5 +1,6 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import styles from "./ContactForm.module.css";
+import emailjs from "emailjs-com";
 
 interface FormData {
   name: string;
@@ -23,8 +24,28 @@ export function ContactForm() {
   };
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
-    console.log(data);
-    reset();
+    const templateParams = {
+      from_name: data.name,
+      from_mail: data.email,
+      from_company: data.company,
+      message: data.message,
+      to_name: "PMD",
+    };
+
+    emailjs
+      .send(
+        "service_nu9ajgr",
+        "template_978o0zk",
+        templateParams,
+        "r64_X6DlA2CbkGvow"
+      )
+      .then((res) => {
+        console.log("SUCCESS!", res.status, res.text);
+        reset();
+      })
+      .catch((error) => {
+        console.error("FAILED...", error);
+      });
   };
 
   const nameField = register("name", { required: "Please enter your name :)" });
@@ -81,7 +102,9 @@ export function ContactForm() {
         <p className={styles.error}>{errors.message.message}</p>
       )}
 
-      <button className={styles.button}>Send</button>
+      <button type="submit" className={styles.button}>
+        Send
+      </button>
     </form>
   );
 }
