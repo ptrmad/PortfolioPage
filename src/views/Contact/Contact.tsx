@@ -4,6 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { H2 } from "../../components/H2/H2";
 import { Link } from "react-router-dom";
 import { ContactForm } from "../../components/ContactForm/ContactForm";
+import { SlideInWrapper } from "../../components/SlideInWrapper/SlideInWrapper";
 
 const contactData = [
   {
@@ -26,23 +27,25 @@ const contactData = [
 export function Contact() {
   return (
     <div className={styles.contact}>
-      <H2>Let's talk!</H2>
-      <ul className={styles.contactList}>
-        {contactData.map((contact) => (
-          <Link
-            key={contact.name}
-            to={contact.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.contactItem}
-          >
-            {contact.icon}
-            <span>{contact.name}</span>
-          </Link>
-        ))}
-      </ul>
-      <H2>Send me a message!</H2>
-      <ContactForm />
+      <SlideInWrapper>
+        <H2>Let's talk!</H2>
+        <ul className={styles.contactList}>
+          {contactData.map((contact) => (
+            <Link
+              key={contact.name}
+              to={contact.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.contactItem}
+            >
+              {contact.icon}
+              <span>{contact.name}</span>
+            </Link>
+          ))}
+        </ul>
+        <H2>Send me a message!</H2>
+        <ContactForm />
+      </SlideInWrapper>
     </div>
   );
 }
