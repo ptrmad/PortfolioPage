@@ -1,5 +1,5 @@
-import { H2 } from "../../componets/H2/H2";
-import { ProjectPreview } from "../../componets/ProjectPreview/ProjectPreview";
+import { H2 } from "../../components/H2/H2";
+import { ProjectPreview } from "../../components/ProjectPreview/ProjectPreview";
 import styles from "./Portfolio.module.css";
 
 interface Project {
@@ -39,7 +39,7 @@ export function Portfolio() {
       <H2>Projects</H2>
       <ul className={styles.projectList}>
         {projects.map((project) => (
-          <li key={project.name} className={styles.projectItem}>
+          <li className={styles.projectItem}>
             <ProjectPreview data={project} />
           </li>
         ))}

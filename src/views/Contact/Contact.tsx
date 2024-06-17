@@ -1,9 +1,9 @@
 import styles from "./Contact.module.css";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
-import { H2 } from "../../componets/H2/H2";
+import { H2 } from "../../components/H2/H2";
 import { Link } from "react-router-dom";
-import { ContactForm } from "../../componets/ContactForm/ContactForm";
+import { ContactForm } from "../../components/ContactForm/ContactForm";
 
 const contactData = [
   {

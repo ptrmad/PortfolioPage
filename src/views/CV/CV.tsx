@@ -1,5 +1,5 @@
 // import { Certificate } from "../../componets/Certificate/Certificate";
-import { H2 } from "../../componets/H2/H2";
+import { H2 } from "../../components/H2/H2";
 import styles from "./CV.module.css";
 
 export function CV() {

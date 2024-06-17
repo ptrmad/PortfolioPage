@@ -12,7 +12,7 @@ export function Footer() {
       <div className={styles.footerSection}>
         <ul>email</ul>
         <ul>
-          <Link className={styles.footerItem} to="portfolio">
+          <Link className={styles.footerItem} to="https://github.com/ptrmad">
             GitHub
           </Link>
         </ul>

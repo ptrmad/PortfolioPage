@@ -1,6 +1,6 @@
-import { H2 } from "../../componets/H2/H2";
-import { MyName } from "../../componets/MyName/MyName";
-import { TechStack } from "../../componets/TechStack/TechStack";
+import { H2 } from "../../components/H2/H2";
+import { MyName } from "../../components/MyName/MyName";
+import { TechStack } from "../../components/TechStack/TechStack";
 import styles from "./Home.module.css";
 import ME from "../../assets/profilePic.jpeg";
 

@@ -13,6 +13,7 @@ import {
   SiReactrouter,
   SiReacthookform,
 } from "react-icons/si";
+import { SlideInWrapper } from "../SlideInWrapper/SlideInWrapper";
 
 export function TechStack() {
   const techs = [
@@ -53,10 +54,12 @@ export function TechStack() {
       <div>
         <ul className={styles.techList}>
           {techs.map((tech) => (
-            <li key={tech.name} className={styles.techItem}>
-              {tech.icon}
-              <span>{tech.name}</span>
-            </li>
+            <SlideInWrapper>
+              <li key={tech.name} className={styles.techItem}>
+                {tech.icon}
+                <span>{tech.name}</span>
+              </li>
+            </SlideInWrapper>
           ))}
         </ul>
       </div>

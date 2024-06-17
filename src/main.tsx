@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./styles/globals.css";
 import "./styles/theme.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Layout } from "./componets/Layout/Layout.tsx";
+import { Layout } from "./components/Layout/Layout.tsx";
 import { Home } from "./views/Home/Home.tsx";
 import { Portfolio } from "./views/Portfolio/Portfolio.tsx";
 import { CV } from "./views/CV/CV.tsx";
