@@ -1,17 +1,23 @@
+// import { useContext } from "react";
 import { H2 } from "../H2/H2";
 import styles from "./ProjectPreview.module.css";
+// import { TechContext } from "../../contexts/TechContext";
 
-interface Project {
+interface PortfolioProject {
   name: string;
   image: string;
   description: string;
+  techUsed: string[];
+  features: string;
 }
 
 interface ProjectPreviewProps {
-  data: Project;
+  data: PortfolioProject;
 }
 
 export function ProjectPreview({ data }: ProjectPreviewProps) {
+  // const tech = useContext(TechContext);
+
   return (
     <div className={styles.projectPreview}>
       <H2>{data.name}</H2>

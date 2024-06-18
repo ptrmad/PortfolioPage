@@ -3,14 +3,17 @@ import { ProjectPreview } from "../../components/ProjectPreview/ProjectPreview";
 import { SlideInWrapper } from "../../components/SlideInWrapper/SlideInWrapper";
 import styles from "./Portfolio.module.css";
 
-interface Project {
+// Renamed to PortfolioProject to avoid conflicts
+interface PortfolioProject {
   name: string;
   image: string;
   description: string;
+  techUsed: string[];
+  features: string;
 }
 
 export function Portfolio() {
-  const projects: Project[] = [
+  const projects: PortfolioProject[] = [
     {
       name: "OliveHub",
       image:
@@ -21,6 +24,8 @@ export function Portfolio() {
                   modules for styling, and a parallax homepage effect.
                   Key features include search functionality and a
                   favorites list.`,
+      techUsed: ["React", "Context API", "react-router-dom", "CSS Modules"],
+      features: "Search functionality and a favorites list.",
     },
     {
       name: "E-commerce platform",
@@ -33,6 +38,24 @@ export function Portfolio() {
                 communication via Fetch API. Enhanced with
                 additional features and optimizations to improve user
                 experience.`,
+      techUsed: ["React", "Hooks", "react-router-dom", "Fetch API"],
+      features:
+        "Adding/removing items from the cart and backend communication.",
+    },
+    {
+      name: "Portfolio Webpage",
+      image:
+        "https://raw.githubusercontent.com/ptrmad/Ecommerce-shop/main/images/screenshot.png",
+      description: `Description: Designed a mobile-first portfolio webpage to showcase my projects and skills.`,
+      techUsed: [
+        "TypeScript",
+        "React",
+        "React Hook Form",
+        "React Intersection Observer",
+      ],
+      features: `
+Advanced Styling: Utilized React Intersection Observer to implement advanced styling and animations.
+Contact Form: Integrated React Hook Form for form handling and authentication, and used EmailJS for sending emails directly from the form.`,
     },
   ];
 
