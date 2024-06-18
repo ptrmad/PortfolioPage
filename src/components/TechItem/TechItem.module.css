@@ -28,7 +28,7 @@
 .techItemProject {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-align: center;
 
@@ -38,8 +38,6 @@
   height: 5rem;
   border-radius: 8px;
   box-shadow: 0 4px 4px var(--color-red);
-  margin: 1rem;
-
   font-size: 0.75rem;
 
   transition: transform 0.3s, box-shadow 0.3s;
