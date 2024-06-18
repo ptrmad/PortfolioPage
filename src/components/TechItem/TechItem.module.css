@@ -1,0 +1,57 @@
+.techItem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background: var(--color-blue);
+  width: 10rem;
+  height: 5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px var(--color-black);
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.techItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px var(--color-black);
+}
+
+.techIcon {
+  font-size: 2rem;
+  margin: 0.25rem;
+  color: #007bff;
+}
+
+.techItemProject {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background: var(--color-beige);
+  color: var(--color-black);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px var(--color-red);
+  margin: 1rem;
+
+  font-size: 0.75rem;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.techItemProject:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px var(--color-red);
+}
+
+.techIconProject {
+  font-size: 1.5rem;
+  margin: 0.25rem;
+  color: #007bff;
+}

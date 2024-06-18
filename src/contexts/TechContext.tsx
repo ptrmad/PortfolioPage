@@ -20,7 +20,7 @@ export const TechContext = createContext([
   { name: "CSS", icon: <FaCss3Alt className={styles.techIcon} /> },
   { name: "CSS modules", icon: <FaCss3Alt className={styles.techIcon} /> },
   { name: "Bootstrap", icon: <FaBootstrap className={styles.techIcon} /> },
-  { name: "Typescript", icon: <SiTypescript className={styles.techIcon} /> },
+  { name: "TypeScript", icon: <SiTypescript className={styles.techIcon} /> },
   { name: "React", icon: <FaReact className={styles.techIcon} /> },
   { name: "React hooks", icon: <FaReact className={styles.techIcon} /> },
   {

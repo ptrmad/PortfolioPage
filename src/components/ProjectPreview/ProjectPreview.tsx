@@ -1,7 +1,8 @@
-// import { useContext } from "react";
-import { H2 } from "../H2/H2";
+import { useContext } from "react";
+import { H2 } from "../../components/H2/H2";
+import { TechItem } from "../../components/TechItem/TechItem";
 import styles from "./ProjectPreview.module.css";
-// import { TechContext } from "../../contexts/TechContext";
+import { TechContext } from "../../contexts/TechContext";
 
 interface PortfolioProject {
   name: string;
@@ -16,7 +17,11 @@ interface ProjectPreviewProps {
 }
 
 export function ProjectPreview({ data }: ProjectPreviewProps) {
-  // const tech = useContext(TechContext);
+  const techs = useContext(TechContext);
+
+  const filteredTech = data.techUsed
+    .map((techName) => techs.find((tech) => tech.name === techName))
+    .filter((tech) => tech !== undefined);
 
   return (
     <div className={styles.projectPreview}>
@@ -25,6 +30,17 @@ export function ProjectPreview({ data }: ProjectPreviewProps) {
         <img src={data.image} alt={data.name} />
       </div>
       <p className={styles.projectDescription}>{data.description}</p>
+      <div>
+        <ul className={styles.techUsed}>
+          {filteredTech.map(
+            (tech) =>
+              tech && (
+                <TechItem isInProject={true} key={tech.name} tech={tech} />
+              )
+          )}
+        </ul>
+      </div>
+      <p className={styles.projectFeatures}>{data.features}</p>
     </div>
   );
 }

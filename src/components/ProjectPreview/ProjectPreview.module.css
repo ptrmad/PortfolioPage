@@ -7,7 +7,7 @@
   background: var(--color-blue);
   width: 30rem;
   max-width: 90vw;
-  height: 50rem;
+  max-height: 60rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px var(--color-black);
 
