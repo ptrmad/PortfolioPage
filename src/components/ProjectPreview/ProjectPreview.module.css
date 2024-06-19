@@ -4,9 +4,11 @@
   align-items: center;
   justify-content: space-evenly;
 
+  padding: 2.5rem 0;
+
   background: var(--color-blue);
 
-  width: calc(20rem + 10vw);
+  width: calc(25rem + 1vw);
   max-width: 90vw;
   height: calc(60rem + 5vh);
   max-height: 95vh;
@@ -28,11 +30,12 @@
 }
 
 .projectDescription {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  text-justify: distribute-all-lines;
+  font-size: calc(0.75rem + 0.5vw);
+  line-height: 1.25;
   text-align: left;
-  padding: 5% 10%;
+  text-justify: distribute;
+
+  padding: 0 10%;
 }
 
 .projectImage {
@@ -44,14 +47,14 @@
 
 .projectImage img {
   place-self: center;
-  max-width: 85%;
+  max-width: 80%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 6px 8px var(--color-black);
 }
 
 .techList {
-  width: 75%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;

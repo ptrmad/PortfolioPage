@@ -17,7 +17,7 @@
 .contactList {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: calc(1rem + 1vw);
 }
 
 .contactItem {

@@ -1,7 +1,7 @@
 .topBar {
   width: 100%;
   height: 4rem;
-  padding: 1rem 2rem;
+  padding: 3rem calc(0.5rem + 1vw);
 
   background-color: var(--color-blue);
   color: var(--color-beige);
@@ -16,14 +16,15 @@
 }
 
 .navSection {
-  font-size: 1.5rem;
+  font-size: calc(1rem + 1vw);
   font-weight: 700;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: calc(0.5rem + 1vw);
+  padding: 0 0.5rem;
 }
 
 .navItem {
