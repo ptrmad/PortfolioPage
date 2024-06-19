@@ -34,3 +34,8 @@
 .navItem:hover {
   transform: scale(1.1);
 }
+
+.myName {
+  display: flex;
+  padding-left: 0.75vw;
+}

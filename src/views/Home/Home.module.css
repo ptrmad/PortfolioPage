@@ -70,7 +70,7 @@
     var(--color-red),
     var(--color-beige)
   );
-  background-size: 400%;
+  background-size: 800%;
   z-index: -1;
   animation: glow 20s linear infinite;
   width: 25rem;

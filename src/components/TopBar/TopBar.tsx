@@ -5,7 +5,7 @@ import styles from "./TopBar.module.css";
 export function TopBar() {
   return (
     <div className={styles.topBar}>
-      <NavLink className={styles.navItem} to="home">
+      <NavLink className={`${styles.navItem} ${styles.myName}`} to="home">
         <MyName />
       </NavLink>
       <div className={styles.navSection}>
