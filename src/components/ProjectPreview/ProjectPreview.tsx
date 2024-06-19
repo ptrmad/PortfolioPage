@@ -9,7 +9,6 @@ interface PortfolioProject {
   image: string;
   description: string;
   techUsed: string[];
-  features: string;
 }
 
 interface ProjectPreviewProps {
@@ -30,17 +29,12 @@ export function ProjectPreview({ data }: ProjectPreviewProps) {
         <img src={data.image} alt={data.name} />
       </div>
       <p className={styles.projectDescription}>{data.description}</p>
-      <div>
-        <ul className={styles.techUsed}>
-          {filteredTech.map(
-            (tech) =>
-              tech && (
-                <TechItem isInProject={true} key={tech.name} tech={tech} />
-              )
-          )}
-        </ul>
-      </div>
-      <p className={styles.projectFeatures}>{data.features}</p>
+      <ul className={styles.techList}>
+        {filteredTech.map(
+          (tech) =>
+            tech && <TechItem isInProject={true} key={tech.name} tech={tech} />
+        )}
+      </ul>
     </div>
   );
 }

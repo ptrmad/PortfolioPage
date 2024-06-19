@@ -8,7 +8,6 @@ interface PortfolioProject {
   image: string;
   description: string;
   techUsed: string[];
-  features: string;
 }
 
 export function Portfolio() {
@@ -24,7 +23,6 @@ export function Portfolio() {
                     Key features include search functionality and a
                     favorites list.`,
       techUsed: ["React", "", "React-router-dom", "CSS modules", "React hooks"],
-      features: "Search functionality and a favorites list.",
     },
     {
       name: "E-commerce platform",
@@ -38,23 +36,19 @@ export function Portfolio() {
                   additional features and optimizations to improve user
                   experience.`,
       techUsed: ["React", "React hooks", "React-router-dom"],
-      features:
-        "Adding/removing items from the cart and backend communication.",
     },
     {
       name: "Portfolio Webpage",
       image:
         "https://raw.githubusercontent.com/ptrmad/Ecommerce-shop/main/images/screenshot.png",
-      description: `Description: Designed a mobile-first portfolio webpage to showcase my projects and skills.`,
+      description: `Description: Designed a mobile-first portfolio webpage to showcase my projects and skills. It utilizes react-intersection observer for slide-in
+      animation and EmailJS for handling sending messages from form built with use of react-hook-form`,
       techUsed: [
         "TypeScript",
         "React",
         "React hook form",
         "React-intersection-observer",
       ],
-      features: `
-        Advanced Styling: Utilized React Intersection Observer to implement advanced styling and animations.
-        Contact Form: Integrated React Hook Form for form handling and authentication, and used EmailJS for sending emails directly from the form.`,
     },
   ];
 
