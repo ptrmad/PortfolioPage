@@ -5,22 +5,12 @@
   </a>
 </div>
 
-<h3 align="center">OliveHub - Discover, Learn, and Enjoy the World of Olive Oil</h3>
+<h3 align="center">Portfolio Page for cooperation purposes</h3>
 
-<p align="center">
-  A React-based webpage designed to for olive oil enthusiasts.
-</p>
-
-## About The Project
-
-OliveHub is a comprehensive webpage designed for anyone who loves olive oil! Whether you're a seasoned connoisseur or just starting to explore the world of extra virgin olive oil (EVOO), OliveHub offers a wealth of information, resources, and tools to help you:
-
-- **Discover:** Explore different types of olive oil, their origins, and flavor profiles.
-- **Learn:** Gain insights into the production process, health benefits, and proper storage techniques.
-- **Enjoy:** Find recipes, pairing recommendations, and tips for incorporating olive oil into your everyday cooking.
+<h3 align="center"><a href=">Live Page</a></h3>
 
 <div align="center">
-  <img src="./Zrzut ekranu 2024-06-19 o 09.26.15.png" alt="OliveHub Screenshot" width="800px" height="auto" />
+  <img src="./Portfolio screen.png" alt="OliveHub Screenshot" width="800px" height="auto" />
 </div>
 
 ### Built With
