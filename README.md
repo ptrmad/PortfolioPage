@@ -5,7 +5,7 @@
   </a>
 </div>
 
-<h3 align="center">Portfolio Page for cooperation purposes</h3>
+<h3 align="center">Portfolio Page for contact and cooperation purposes</h3>
 
 <h3 align="center"><a href="">Live Page</a></h3>
 
@@ -22,7 +22,7 @@
   - Context API
     - **React Router DOM:** A library for handling routing in React applications.
     - **React Intersection Observer:** For styling and animations.
-    - **React Hook Form:** For form
+    - **React Hook Form:** For form handling.
 
 - **CSS Modules:** A technique for managing CSS styles within React components.
 - **Vite:** A development server and bundler.
