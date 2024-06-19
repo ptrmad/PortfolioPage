@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ptrmad/PortfolioPage">
-    <img src="images/olive.svg" alt="Logo" width="80" height="80">
+  Portfolio Page
   </a>
 </div>
 
