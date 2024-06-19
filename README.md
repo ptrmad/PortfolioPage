@@ -7,7 +7,7 @@
 
 <h3 align="center">Portfolio Page for cooperation purposes</h3>
 
-<h3 align="center"><a href=">Live Page</a></h3>
+<h3 align="center"><a href="">Live Page</a></h3>
 
 <div align="center">
   <img src="./Portfolio screen.png" alt="OliveHub Screenshot" width="800px" height="auto" />
