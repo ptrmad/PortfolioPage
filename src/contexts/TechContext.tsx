@@ -14,6 +14,7 @@ import {
   SiReactrouter,
   SiReacthookform,
 } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 
 export const TechContext = createContext([
   { name: "HTML", icon: <FaHtml5 className={styles.techIcon} /> },
@@ -38,6 +39,10 @@ export const TechContext = createContext([
   {
     name: "React-intersection-observer",
     icon: <FaReact className={styles.techIcon} />,
+  },
+  {
+    name: "Next.js",
+    icon: <RiNextjsFill className={styles.techIcon} />,
   },
   { name: "Vite", icon: <SiVite className={styles.techIcon} /> },
   { name: "Git", icon: <FaGitAlt className={styles.techIcon} /> },

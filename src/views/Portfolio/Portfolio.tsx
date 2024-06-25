@@ -40,7 +40,7 @@ export function Portfolio() {
     {
       name: "Portfolio Webpage",
       image:
-        "https://raw.githubusercontent.com/ptrmad/Ecommerce-shop/main/images/screenshot.png",
+        "https://raw.githubusercontent.com/ptrmad/PortfolioPage/main/Portfolio%20screen.png",
       description: `Description: Designed a mobile-first portfolio webpage to showcase my projects and skills. It utilizes react-intersection observer for slide-in
       animation and EmailJS for handling sending messages from form built with use of react-hook-form`,
       techUsed: [
@@ -49,6 +49,13 @@ export function Portfolio() {
         "React hook form",
         "React-intersection-observer",
       ],
+    },
+    {
+      name: "Tribute Page",
+      image:
+        "https://raw.githubusercontent.com/ptrmad/witkacyNEXT/main/WtkcScreen.png",
+      description: `Project made with basic Next.js, designed mobile first.`,
+      techUsed: ["TypeScript", "React", "Next.js"],
     },
   ];
 
