@@ -4,6 +4,7 @@ import { TechStack } from "../../components/TechStack/TechStack";
 import styles from "./Home.module.css";
 import ME from "../../assets/profilePic.jpeg";
 import { SlideInWrapper } from "../../components/SlideInWrapper/SlideInWrapper";
+import { CatFact } from "../../components/CatFact/CatFact";
 
 export function Home() {
   return (
@@ -15,6 +16,7 @@ export function Home() {
           </div>
         </div>
       </SlideInWrapper>
+
       <div className={styles.heading}>
         <h1>
           <SlideInWrapper>
@@ -30,6 +32,9 @@ export function Home() {
           </p>
         </SlideInWrapper>
       </div>
+      <SlideInWrapper>
+        <CatFact />
+      </SlideInWrapper>
       <TechStack />
       <div className={styles.text}>
         <SlideInWrapper>
