@@ -8,7 +8,7 @@ export function CV() {
     <div className={styles.cv}>
       <SlideInWrapper>
         <H2>CV</H2>
-        <iframe src="https://drive.google.com/file/d/1djxp5Uz1pozbE2q8jO_lhjB9C-jOzLq0/view?usp=sharing"></iframe>
+        <iframe src="https://drive.google.com/file/d/1djxp5Uz1pozbE2q8jO_lhjB9C-jOzLq0/preview"></iframe>
       </SlideInWrapper>
       {/* <H2>Certificates</H2>
       <Certificate />
